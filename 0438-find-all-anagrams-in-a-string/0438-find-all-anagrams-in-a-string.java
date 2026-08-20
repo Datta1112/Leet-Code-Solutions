@@ -27,10 +27,6 @@ class Solution {
                 }
             }
         }
-        if(ls.size()==0){
-            return ls;
-        }else{
-            return ls;
-        }
+        return ls;
     }
 }
