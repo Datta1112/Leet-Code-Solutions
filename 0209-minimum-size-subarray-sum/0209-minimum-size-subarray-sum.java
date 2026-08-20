@@ -2,8 +2,8 @@ class Solution {
     public int minSubArrayLen(int target, int[] nums) {
         int l=0;
         int ans=Integer.MAX_VALUE;
-        int temp=0;
         int n=nums.length;
+        int temp=0;
         for(int r=0;r<n;r++){
             temp+=nums[r];
             while(temp>=target){
@@ -14,7 +14,8 @@ class Solution {
         }
         if(ans==Integer.MAX_VALUE){
             return 0;
+        }else{
+            return ans;
         }
-        return ans;
     }
 }
