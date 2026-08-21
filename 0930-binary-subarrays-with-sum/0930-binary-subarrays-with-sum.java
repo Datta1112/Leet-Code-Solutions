@@ -13,7 +13,7 @@ class Solution {
                 temp-=nums[l];
                 l++;
             }
-            ans=ans+r-l+1;
+            ans+=r-l+1;
         }
         return ans;
     }
