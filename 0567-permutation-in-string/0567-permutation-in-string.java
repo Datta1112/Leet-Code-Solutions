@@ -3,7 +3,6 @@ class Solution {
         HashMap<Character,Integer> hm=new HashMap<>();
         HashMap<Character,Integer> hm2=new HashMap<>();
         int l=0;
-        int count=0;
         int n=s2.length();
         int k=s1.length();
         for(int i=0;i<k;i++){
