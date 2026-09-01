@@ -8,16 +8,16 @@ class Solution {
                 return false;
             }
             if(temp + weights[i]>max){
-                usedays++;
+                days--;
                 temp=weights[i];
             }else{
                 temp+=weights[i];
             }
         }
-        if(usedays<=days){
-                return true;
+        if(days<=0){
+                return false;
             }
-        return false;
+        return true;
     }
     public int shipWithinDays(int[] weights, int days) {
         int l=1;
