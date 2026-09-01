@@ -19,6 +19,9 @@ class Solution {
         return false;
     }
     public int minDays(int[] bloomDay, int m, int k) {
+        if((long)m*k>bloomDay.length){
+            return -1;
+        }
         int l=1;
         int r=1000000000;
         while(l<=r){
@@ -28,9 +31,6 @@ class Solution {
             }else{
                 l=mid+1;
             }
-        }
-        if((long)m*k>bloomDay.length){
-            return -1;
         }
         return l;
     }
