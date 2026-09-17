@@ -1,9 +1,9 @@
 class Solution {
     public boolean isPossible(int[] nums,int threshold,int k){
         for(int i=0;i<nums.length;i++){
-            int a=nums[i];
-            int fin=(int) Math.ceil((float)a/k);            
-            threshold-=fin;
+            int val=nums[i];
+            int temp=(int) Math.ceil((float) val/k);
+            threshold-=temp;
         }
         if(threshold<0){
             return false;
