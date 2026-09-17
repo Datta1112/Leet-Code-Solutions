@@ -1,15 +1,17 @@
 class Solution {
     public boolean isPossible(int limit,int n,int[] quantities){
-        int sum=0;
         for(int i=0;i<quantities.length;i++){
-            int temp=(int) Math.ceil((double) quantities[i]/limit);
-            sum+=temp;
+            int val=quantities[i];
+            int temp=val/limit;
+            if(val%limit!=0){
+                temp++;
+            }
+            n-=temp;
+            if(n<0){
+                return false;
+            }
         }
-        if(sum<=n){
-            return true;
-        }else{
-            return false;
-        }
+        return true;
     }
     public int minimizedMaximum(int n, int[] quantities) {
         int l=1;
