@@ -17,7 +17,7 @@ class Solution {
     }
     public int maxDistance(int[] position, int m) {
         int l=1;
-        int r=1000000000;
+        int r=(int) Math.pow(10,9);
         while(l<=r){
             int mid=l+(r-l)/2;
             if(isPossible(position,m,mid)){
