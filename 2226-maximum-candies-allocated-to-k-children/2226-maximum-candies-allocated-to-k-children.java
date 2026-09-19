@@ -2,10 +2,8 @@ class Solution {
     public boolean isPossible(int[] candies,long k,int mid){
         for(int i=0;i<candies.length;i++){
             int a=candies[i];
-            if(a>=mid){
-                int val=a/mid;
-                k-=val;
-            }
+            int val=a/mid;
+            k-=val;
         }
         if(k<=0){
             return true;
