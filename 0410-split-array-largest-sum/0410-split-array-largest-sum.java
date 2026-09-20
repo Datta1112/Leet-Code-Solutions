@@ -12,6 +12,7 @@ class Solution {
             }else{
                 temp+=nums[r];
             }
+
         }
         if(count<=k){
             return true;
