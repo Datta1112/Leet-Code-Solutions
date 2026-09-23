@@ -3,11 +3,11 @@ class Solution {
         HashMap<Integer,Integer> hm=new HashMap<>();
         int l=0;
         int n=fruits.length;
-        int count=0;
         int ans=0;
+        int count=0;
         for(int r=0;r<n;r++){
             if(hm.containsKey(fruits[r])){
-                hm.put(fruits[r],hm.getOrDefault(fruits[r],0)+1);
+                hm.put(fruits[r],hm.get(fruits[r])+1);
             }else{
                 hm.put(fruits[r],1);
                 count++;
