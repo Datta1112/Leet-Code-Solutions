@@ -14,7 +14,7 @@ class Solution {
                 st.push(first);
                 st.push(first+second);
             }else{
-                st.push(Integer.parseInt(operations[i]));
+                st.push(Integer.valueOf(operations[i]));
             }
         }
         while(!st.isEmpty()){
