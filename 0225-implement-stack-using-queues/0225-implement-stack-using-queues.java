@@ -6,9 +6,11 @@ class MyStack {
     
     public void push(int x) {
         q.add(x);
-        for(int i=1;i<q.size();i++){
+        int i=1;
+        while(i<q.size()){
             int val=q.poll();
             q.add(val);
+            i++;
         }
     }
     
