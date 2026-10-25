@@ -7,6 +7,6 @@ class Solution {
         for(int i=1;i<k;i++){
             pq.poll();
         }
-    return pq.poll();
+        return pq.peek();
     }
 }
