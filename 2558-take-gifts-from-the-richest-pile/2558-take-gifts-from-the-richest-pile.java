@@ -1,8 +1,8 @@
 class Solution {
     public long pickGifts(int[] gifts, int k) {
         PriorityQueue<Integer> pq=new PriorityQueue<>(Collections.reverseOrder());
-        for(int i:gifts){
-            pq.add(i);
+        for(int n:gifts){
+            pq.add(n);
         }
         int count=0;
         while(count<k){
