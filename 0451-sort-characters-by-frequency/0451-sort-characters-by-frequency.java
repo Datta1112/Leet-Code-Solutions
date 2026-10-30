@@ -12,8 +12,8 @@ class Solution {
         }
         StringBuilder sb=new StringBuilder();
         for(Map.Entry<Integer,List<Character>> entry:tm.entrySet()){
-            int freq=entry.getKey();
             for(char ch:entry.getValue()){
+                int freq=entry.getKey();
                 for(int i=0;i<freq;i++){
                     sb.append(ch);
                 }
